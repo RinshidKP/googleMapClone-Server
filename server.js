@@ -7,9 +7,9 @@ import cors from 'cors';
 const app = express();
 
 const corsOptions = {
-  origin: ['http://localhost:5173/','http://localhost:5173','https://google-map-clone-client.vercel.app/login'],
-  optionsSuccessStatus: 200,
-  methods: ['GET', 'POST'],
+  origin: ['https://google-map-clone-client.vercel.app', 'https://google-map-clone-client.vercel.app/'],
+  methods: ['GET', 'POST'], 
+  credentials: true 
 };
 
 connectToDatabase();
